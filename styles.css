@@ -1,0 +1,63 @@
+.social-media {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #f1f1f1; /* You can change this to any color you prefer */
+    text-decoration: none;
+    font-size: 20px; /* Adjust size as needed */
+}
+
+.social-media a:hover {
+    color: #1e90ff; /* Change hover color if desired */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    .social-media a {
+        font-size: 16px;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contact-section {
+    background: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #1593e6;
+}
