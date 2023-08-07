@@ -16,6 +16,63 @@
     color: #1e90ff; /* Change hover color if desired */
 }
 
+        body {
+            background-color: #2e2e2e;
+            color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #e0e0e0;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .bio-section, .interest-section {
+            padding: 10px;
+            background: #3a3a3a;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        footer {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #444;
+        }
+
 
 @media only screen and (max-width: 600px) {
     .container {
