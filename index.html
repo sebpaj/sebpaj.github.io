@@ -1,118 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Your Personal Blog</title>
-    <style>
-        body {
-            background-color: #2e2e2e;
-            color: #f1f1f1;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  </head>
 
-        h1, h2 {
-            color: #e0e0e0;
-        }
-
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            background: #333;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .bio-section, .interest-section {
-            padding: 10px;
-            background: #3a3a3a;
-            border-radius: 10px;
-            margin: 10px 0;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            padding: 5px;
-        }
-
-        footer {
-            background: #333;
-            padding: 10px;
-            text-align: center;
-            margin-top: 20px;
-            border-top: 1px solid #444;
-        }
-    </style>
-</head>
-
-<body>
-<div class="header">
-    <h1>Welcome to My Personal Blog</h1>
-</div>
-<div class="container">
-    <div class="bio-section">
-        <h2>About Me</h2>
-        <p>I am a software engineer with a keen interest in aerospace engineering and fluid mechanics. This blog is a space to share my thoughts and experiences related to these fields.</p>
+  <body>
+    <div class="header">
+      <h1>Welcome to My Personal Blog</h1>
     </div>
-    <div class="interest-section">
+    <div class="container">
+      <div class="bio-section">
+        <h2>About Me</h2>
+        <p>
+          I am a software engineer with a keen interest in aerospace engineering
+          and fluid mechanics. This blog is a space to share my thoughts and
+          experiences related to these fields.
+        </p>
+      </div>
+      <div class="interest-section">
         <h2>Interests</h2>
         <ul>
-            <li>Software Engineering</li>
-            <li>Aerospace Engineering</li>
-            <li>Fluid Mechanics</li>
-            <li>Data Labeling</li>
-            <li>Cloud Solutions</li>
+          <li><a href="software-engineering/software-engineering.html">Software Engineering</a></li>
+          <li>
+            <a href="aerospace-engineering/aerospace-engineering.html">Aerospace Engineering</a>
+          </li>
+          <li><a href="fluid-mechanics/fluid-mechanics.html">Fluid Mechanics</a></li>
+          <li><a href="data-labeling/data-labeling.html">Data Labeling</a></li>
+          <li><a href="cloud-solutions/cloud-solutions.html">Cloud Solutions</a></li>
         </ul>
-    </div>
-    <div class="contact-section">
+      </div>
+      <div class="contact-section">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/your-email@example.com" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+        <form
+          action="https://formspree.io/your-email@example.com"
+          method="POST"
+        >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea
+          ><br /><br />
 
-            <input type="submit" value="Send">
+          <input type="submit" value="Send" />
         </form>
-    </div>
+      </div>
 
-    <footer>
-        <p>Feel free to to reach me for any inquiries or collaboration opportunities.</p>
+      <footer>
+        <p>
+          Feel free to to reach me for any inquiries or collaboration
+          opportunities.
+        </p>
         <div class="social-media">
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
-    </footer>
-
-</div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
