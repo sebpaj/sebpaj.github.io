@@ -3,161 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sebastian Pająk - Senior Software Engineer & Tech Lead</title>
+  <title>Sebastian Pająk | Innovator, Engineer, Creative Technologist</title>
+  <!-- Google Fonts for a fresh typographic look -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header Section -->
+  <!-- Header with Navigation -->
   <header>
-    <nav>
+    <nav class="nav-bar">
+      <div class="logo">Sebastian Pająk</div>
       <ul class="nav-links">
-		<li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#offerings">Offerings</a></li>
-		<li><a href="#social-media">Social Media</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#connect">Connect</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <img src="images/placeholder.jpg" alt="Sebastian Pająk" class="profile-pic"/>
-    <h1>Sebastian Pająk</h1>
-    <h2>Senior Software Engineer & Tech Lead</h2>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="images/PlaceHolder.jpg" alt="Sebastian Pająk" class="profile-pic">
+      <h1>Sebastian Pająk</h1>
+      <p class="tagline">Engineer. Tech Lead. Passionate Educator.</p>
+    </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="content-section">
-    <h3>About Me</h3>
-    <p>
-      I’m a full-stack developer with a strong focus on backend development (Python, Django, FastAPI, and Flask). 
-      Over the years, I’ve worked with React, TypeScript, and Node.js, and have hands-on experience with 
-      infrastructure as code (Terraform, AWS CDK). 
-    </p>
-    <p>
-My experience spans multiple cloud platforms—Azure, AWS, GCP—and covers container orchestration (Kubernetes), serverless deployments (AWS Lambda, Google Cloud Run), plus event-driven architectures (EventBridge, various queue services). My expertise includes AWS resources like EC2 and AppSync. I’ve led teams and defined technical requirements to deliver robust solutions using Postgres, DynamoDB, and Firestore. Additionally, I design and build both web and offline desktop applications leveraging web technologies, backed by 7 years of professional experience.
-    </p>
-	<p>
-	It’s good to have a well-designed API… especially when your colleague is learning on production and you need to restore everything back to normal. 😅
-	</p>
-	<p>
-	<img src="images/meme.jpg" alt="Funny meme" style="width: 400px; height: 200px;">
-	</p>
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hello, I’m Sebastian Pająk—a passionate technologist with over 7 years of experience. I blend creativity with robust engineering to build scalable, elegant solutions that solve real-world problems. Whether architecting backend systems or leading dynamic teams, I’m dedicated to innovation and excellence.
+		<br><br>
+		It’s good to have a well-designed API… especially when your colleague is learning on production and you need to restore everything back to normal. 😅
+
+	  </p>
+    </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="content-section">
-    <h3>Roles & Experience</h3>
-    <ul>
-      <li><strong>Senior Software Engineer</strong> – Leading backend solutions</li>
-      <li><strong>Epic Owner</strong> – Coordinating major feature development</li>
-      <li><strong>Tech Lead</strong> – Managing teams, mentoring developers, overseeing technical strategy</li>
-    </ul>
+  <!-- Expertise Section -->
+  <section id="expertise" class="section expertise">
+    <div class="container">
+      <h2>Expertise & Experience</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Software Engineering</h3>
+          <p>Developing robust backend systems with Python, Django, FastAPI, and Node.js. Mastering microservices and scalable architectures.</p>
+        </div>
+        <div class="card">
+          <h3>Technical Leadership</h3>
+          <p>Guiding teams, mentoring developers, and driving innovation in fast-paced, ever-evolving tech environments.</p>
+        </div>
+        <div class="card">
+          <h3>Cloud & Infrastructure</h3>
+          <p>Expert in AWS, Azure, GCP, Kubernetes, and Infrastructure as Code with Terraform and AWS CDK.</p>
+        </div>
+		<div class="card">
+          <h3>Generative AI Solutions</h3>
+          <p>Leveraging generative AI to automate repetitive tasks and generate innovative solutions. </p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Offerings Section -->
-<section id="offerings" class="content-section">
-  <h3>Offerings & Lessons</h3>
-
-  <!-- 1) AI & Generative AI Guidance -->
-  <details>
-    <summary>AI & Generative AI Guidance</summary>
-    <ul>
-      <li><strong>Foundations of AI & LLMs:</strong> Explore AI foundations and availability.</li>
-      <li><strong>Practical Implementation:</strong> Integrate LLMS for text generation, chatbots, or analytics.</li>
-    </ul>
-  </details>
-
-  <!-- 2) Python Backend Development -->
-  <details>
-    <summary>Python Backend Development</summary>
-    <ul>
-	  <li><strong>Data Types & Data Structers:</strong> Covers Python's core data types (int, float, str) and data structures (list, tuple, set, dict), including their properties, operations, methods, and best use cases.</li>
-	  <li><strong>Python core mechanics:</strong> Exception Handling, File Handling, Iterators & Generators, Decorators & Closures, Object-Oriented Programming (OOP), Functional Programming, Multithreading & Multiprocessing, Asyncio, Modules & Imports, Memory Management, Metaprogramming.</li>
-      <li><strong>Frameworks & Libraries:</strong> Django, FastAPI, Flask for RESTful or GraphQL APIs.</li>
-	  <li><strong>Serverless functions:</strong>  Lightweight handlers for processing data, managing events, automating workflows, and executing backend logic without managing servers..</li>
-      <li><strong>Database Integrations:</strong> Postgres, MongoDB, DynamoDB, Firestore, etc.</li>
-      <li><strong>Testing & Debugging:</strong> Unit tests, integration tests, and debugging workflows.</li>
-      <li><strong>Performance Optimization:</strong> Caching, async processing, and scalability tactics.</li>
-	  <li><strong>Application architecture:</strong> Event-driven and API's based best architectures patterns.</li>
-    </ul>
-  </details>
-
-  <!-- 3) Production-Ready Applications -->
-  <details>
-    <summary>Production-Ready Applications</summary>
-    <ul>
-      <li><strong>Containerization & Docker:</strong> Consistent dev-to-prod environments.</li>
-      <li><strong>CI/CD Pipelines:</strong> Automated builds, tests, and deployments.</li>
-      <li><strong>Monitoring & Logging:</strong> Logging, metrics, and alerting for robust apps.</li>
-      <li><strong>High Availability & Scalability:</strong> Load balancing, auto-scaling, fault tolerance.</li>
-      <li><strong>Infrastructure as Code:</strong> Terraform or AWS CDK to manage environments.</li>
-    </ul>
-  </details>
-
-  <!-- 4) Cloud Deployments & Infrastructure -->
-  <details>
-    <summary>Cloud Deployments & Infrastructure</summary>
-    <ul>
-      <li><strong>Multi-Cloud Strategies:</strong> AWS, Azure, GCP to reduce lock-in.</li>
-      <li><strong>Kubernetes & Serverless:</strong> Orchestrate containers or use Lambda/Cloud Run.</li>
-      <li><strong>Event-Driven Architectures:</strong> EventBridge, Pub/Sub, queue services.</li>
-      <li><strong>Security & Compliance:</strong> IAM, encryption, best practices.</li>
-    </ul>
-  </details>
-
-  <!-- 5) Interview Preparation & Mock Interviews -->
-  <details>
-    <summary>Interview Preparation & Mock Interviews</summary>
-    <ul>
-      <li><strong>Technical Interviews:</strong> Data structures, algorithms, system design.</li>
-      <li><strong>Behavioral & Soft Skills:</strong> Tackling tricky questions, leadership, teamwork.</li>
-      <li><strong>Personalized Feedback:</strong> Targeted mock interviews, growth insights.</li>
-      <li><strong>Resume & Profile Review:</strong> Stand out on LinkedIn, GitHub, and more.</li>
-    </ul>
-  </details>
-
-</section>
-
-  <!-- Social MEdia Section -->
-  <section id="social-media" class="content-section">
-    <h3>Find me in social media</h3>
-    <ul>
-      <li><strong>Linkedin</strong> – <a href="https://www.linkedin.com/in/sebastianpajak/" target="_blank">View on LinkedIn</a></li>
-	  <li><strong>Youtube podcast - it was some time ago</strong> – <a href="https://www.youtube.com/watch?v=cV-LUD-ai9A" target="_blank">View on YouTube</a></li>
-    </ul>
+  <!-- Services Section with Accordion -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2>Services & Offerings</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-title">AI & Generative AI Guidance</button>
+          <div class="accordion-content">
+            <p>
+              From foundational AI concepts to advanced LLM integration, I provide tailored insights to help you try it out.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">Python Backend & API Development</button>
+          <div class="accordion-content">
+            <p>
+              Providing expert consulting on Python core concepts, efficient software architecture, and best coding practices to build secure, scalable, and high-performance applications. Specializing in robust data handling, testing strategies.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">Production-Ready Applications</button>
+          <div class="accordion-content">
+            <p>
+              Full-cycle development from containerization and CI/CD pipeline setups to real-time monitoring and performance optimization.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">Cloud Deployments & Infrastructure</button>
+          <div class="accordion-content">
+            <p>
+              Multi-cloud strategies, Kubernetes orchestration, and event-driven architectures for seamless deployments and scalability.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">Interview & Career Coaching</button>
+          <div class="accordion-content">
+            <p>
+              Personalized mock interviews, technical assessments, and career advice to help you excel in the tech industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Connect Section -->
+  <section id="connect" class="section connect">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <p>
+        Whether you’re looking to collaborate, need technical advice, or just want to say hello, find me on:
+      </p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/sebastianpajak" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube - Podcast apperance</a></li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="content-section">
-    <h3>Contact Me</h3>
-    <p>Feel free to reach out anytime via the form below. I’ll respond as soon as possible!</p>
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
 
-    <!-- Contact Form (Using Formspree) -->
-    <!-- INSTRUCTIONS:
-         1. Go to https://formspree.io/
-         2. Sign up and create a form
-         3. Replace the "YOUR_FORMSPREE_ENDPOINT" with your actual Formspree action URL.
-    -->
-    <form action="https://formspree.io/f/xvgzejwl" method="POST" class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your name" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="_replyto" placeholder="Your email" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-      <button type="submit">Send</button>
-    </form>
+      <form action="https://formspree.io/f/xvgzejwl" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Sebastian Pająk. All Rights Reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sebastian Pająk. Crafted with creativity & code.</p>
+    </div>
   </footer>
+
+  <!-- Accordion Script -->
+  <script>
+    // Simple accordion functionality
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+      const title = item.querySelector('.accordion-title');
+      title.addEventListener('click', () => {
+        // Close any open accordion items
+        accordionItems.forEach(i => {
+          if (i !== item) i.classList.remove('active');
+        });
+        // Toggle current item
+        item.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
