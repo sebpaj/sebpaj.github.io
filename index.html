@@ -1,73 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Your Personal Blog</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sebastian Pająk - Senior Software Engineer & Tech Lead</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul class="nav-links">
+		<li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#offerings">Offerings</a></li>
+		<li><a href="#social-media">Social Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <body>
-    <div class="header">
-      <h1>Welcome to My Personal Blog</h1>
-    </div>
-    <div class="container">
-      <div class="bio-section">
-        <h2>About Me</h2>
-        <p>
-          I am a software engineer with a keen interest in aerospace engineering
-          and fluid mechanics. This blog is a space to share my thoughts and
-          experiences related to these fields.
-        </p>
-      </div>
-      <div class="interest-section">
-        <h2>Interests</h2>
-        <ul>
-          <li><a href="software-engineering/software-engineering.html">Software Engineering</a></li>
-          <li>
-            <a href="aerospace-engineering/aerospace-engineering.html">Aerospace Engineering</a>
-          </li>
-          <li><a href="fluid-mechanics/fluid-mechanics.html">Fluid Mechanics</a></li>
-          <li><a href="data-labeling/data-labeling.html">Data Labeling</a></li>
-          <li><a href="cloud-solutions/cloud-solutions.html">Cloud Solutions</a></li>
-        </ul>
-      </div>
-      <div class="contact-section">
-        <h2>Contact Me</h2>
-        <form
-          action="https://formspree.io/your-email@example.com"
-          method="POST"
-        >
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required /><br /><br />
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/placeholder.jpg" alt="Sebastian Pająk" class="profile-pic"/>
+    <h1>Sebastian Pająk</h1>
+    <h2>Senior Software Engineer & Tech Lead</h2>
+  </section>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br /><br />
+  <!-- About Section -->
+  <section id="about" class="content-section">
+    <h3>About Me</h3>
+    <p>
+      I’m a full-stack developer with a strong focus on backend development (Python, Django, FastAPI, and Flask). 
+      Over the years, I’ve worked with React, TypeScript, and Node.js, and have hands-on experience with 
+      infrastructure as code (Terraform, AWS CDK). 
+    </p>
+    <p>
+My experience spans multiple cloud platforms—Azure, AWS, GCP—and covers container orchestration (Kubernetes), serverless deployments (AWS Lambda, Google Cloud Run), plus event-driven architectures (EventBridge, various queue services). My expertise includes AWS resources like EC2 and AppSync. I’ve led teams and defined technical requirements to deliver robust solutions using Postgres, DynamoDB, and Firestore. Additionally, I design and build both web and offline desktop applications leveraging web technologies, backed by 7 years of professional experience.
+    </p>
+	<p>
+	It’s good to have a well-designed API… especially when your colleague is learning on production and you need to restore everything back to normal. 😅
+	</p>
+	<p>
+	<img src="images/meme.jpg" alt="Funny meme" style="width: 400px; height: 200px;">
+	</p>
+  </section>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea
-          ><br /><br />
+  <!-- Experience Section -->
+  <section id="experience" class="content-section">
+    <h3>Roles & Experience</h3>
+    <ul>
+      <li><strong>Senior Software Engineer</strong> – Leading backend solutions</li>
+      <li><strong>Epic Owner</strong> – Coordinating major feature development</li>
+      <li><strong>Tech Lead</strong> – Managing teams, mentoring developers, overseeing technical strategy</li>
+    </ul>
+  </section>
 
-          <input type="submit" value="Send" />
-        </form>
-      </div>
+  <!-- Offerings Section -->
+<section id="offerings" class="content-section">
+  <h3>Offerings & Lessons</h3>
 
-      <footer>
-        <p>
-          Feel free to to reach me for any inquiries or collaboration
-          opportunities.
-        </p>
-        <div class="social-media">
-          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-        </div>
-      </footer>
-    </div>
-  </body>
+  <!-- 1) AI & Generative AI Guidance -->
+  <details>
+    <summary>AI & Generative AI Guidance</summary>
+    <ul>
+      <li><strong>Foundations of AI & LLMs:</strong> Explore AI foundations and availability.</li>
+      <li><strong>Practical Implementation:</strong> Integrate LLMS for text generation, chatbots, or analytics.</li>
+    </ul>
+  </details>
+
+  <!-- 2) Python Backend Development -->
+  <details>
+    <summary>Python Backend Development</summary>
+    <ul>
+	  <li><strong>Data Types & Data Structers:</strong> Covers Python's core data types (int, float, str) and data structures (list, tuple, set, dict), including their properties, operations, methods, and best use cases.</li>
+	  <li><strong>Python core mechanics:</strong> Exception Handling, File Handling, Iterators & Generators, Decorators & Closures, Object-Oriented Programming (OOP), Functional Programming, Multithreading & Multiprocessing, Asyncio, Modules & Imports, Memory Management, Metaprogramming.</li>
+      <li><strong>Frameworks & Libraries:</strong> Django, FastAPI, Flask for RESTful or GraphQL APIs.</li>
+	  <li><strong>Serverless functions:</strong>  Lightweight handlers for processing data, managing events, automating workflows, and executing backend logic without managing servers..</li>
+      <li><strong>Database Integrations:</strong> Postgres, MongoDB, DynamoDB, Firestore, etc.</li>
+      <li><strong>Testing & Debugging:</strong> Unit tests, integration tests, and debugging workflows.</li>
+      <li><strong>Performance Optimization:</strong> Caching, async processing, and scalability tactics.</li>
+	  <li><strong>Application architecture:</strong> Event-driven and API's based best architectures patterns.</li>
+    </ul>
+  </details>
+
+  <!-- 3) Production-Ready Applications -->
+  <details>
+    <summary>Production-Ready Applications</summary>
+    <ul>
+      <li><strong>Containerization & Docker:</strong> Consistent dev-to-prod environments.</li>
+      <li><strong>CI/CD Pipelines:</strong> Automated builds, tests, and deployments.</li>
+      <li><strong>Monitoring & Logging:</strong> Logging, metrics, and alerting for robust apps.</li>
+      <li><strong>High Availability & Scalability:</strong> Load balancing, auto-scaling, fault tolerance.</li>
+      <li><strong>Infrastructure as Code:</strong> Terraform or AWS CDK to manage environments.</li>
+    </ul>
+  </details>
+
+  <!-- 4) Cloud Deployments & Infrastructure -->
+  <details>
+    <summary>Cloud Deployments & Infrastructure</summary>
+    <ul>
+      <li><strong>Multi-Cloud Strategies:</strong> AWS, Azure, GCP to reduce lock-in.</li>
+      <li><strong>Kubernetes & Serverless:</strong> Orchestrate containers or use Lambda/Cloud Run.</li>
+      <li><strong>Event-Driven Architectures:</strong> EventBridge, Pub/Sub, queue services.</li>
+      <li><strong>Security & Compliance:</strong> IAM, encryption, best practices.</li>
+    </ul>
+  </details>
+
+  <!-- 5) Interview Preparation & Mock Interviews -->
+  <details>
+    <summary>Interview Preparation & Mock Interviews</summary>
+    <ul>
+      <li><strong>Technical Interviews:</strong> Data structures, algorithms, system design.</li>
+      <li><strong>Behavioral & Soft Skills:</strong> Tackling tricky questions, leadership, teamwork.</li>
+      <li><strong>Personalized Feedback:</strong> Targeted mock interviews, growth insights.</li>
+      <li><strong>Resume & Profile Review:</strong> Stand out on LinkedIn, GitHub, and more.</li>
+    </ul>
+  </details>
+
+</section>
+
+  <!-- Social MEdia Section -->
+  <section id="social-media" class="content-section">
+    <h3>Find me in social media</h3>
+    <ul>
+      <li><strong>Linkedin</strong> – <a href="https://www.linkedin.com/in/sebastianpajak/" target="_blank">View on LinkedIn</a></li>
+	  <li><strong>Youtube podcast - it was some time ago</strong> – <a href="https://www.youtube.com/watch?v=cV-LUD-ai9A" target="_blank">View on YouTube</a></li>
+    </ul>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="content-section">
+    <h3>Contact Me</h3>
+    <p>Feel free to reach out anytime via the form below. I’ll respond as soon as possible!</p>
+
+    <!-- Contact Form (Using Formspree) -->
+    <!-- INSTRUCTIONS:
+         1. Go to https://formspree.io/
+         2. Sign up and create a form
+         3. Replace the "YOUR_FORMSPREE_ENDPOINT" with your actual Formspree action URL.
+    -->
+    <form action="https://formspree.io/f/xvgzejwl" method="POST" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" placeholder="Your email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sebastian Pająk. All Rights Reserved.</p>
+  </footer>
+</body>
 </html>
